@@ -5,7 +5,7 @@ const MenuItems = () => {
   return (
     <ul className="big:space-y-6 flex flex-col  space-y-3">
       <li>
-        <Link href="/" className="large:text-2xl flex space-x-5">
+        <Link href="/" className="large:text-xl flex space-x-5">
           <span>
             <Image
               src="/images/sidebarIcon/dashboard1.svg"
@@ -20,7 +20,7 @@ const MenuItems = () => {
       <li>
         <Link
           href="/email"
-          className="large:text-2xl flex justify-between space-x-5">
+          className="large:text-xl flex justify-between space-x-5">
           <div className="flex space-x-5">
             <span>
               <Image
@@ -56,7 +56,7 @@ const MenuItems = () => {
         </Link>
       </li>
       <li>
-        <Link href="/chat" className="large:text-2xl flex space-x-5">
+        <Link href="/chat" className="large:text-xl flex space-x-5">
           <span>
             <Image
               src="/images/sidebarIcon/comment1.svg"
@@ -71,7 +71,7 @@ const MenuItems = () => {
       <li>
         <Link
           href="/kanban"
-          className="large:text-2xl flex justify-between space-x-5">
+          className="large:text-xl flex justify-between space-x-5">
           <div className="flex space-x-5">
             <span>
               <Image
@@ -104,7 +104,7 @@ const MenuItems = () => {
       <li>
         <Link
           href="/contact"
-          className="large:text-2xl flex justify-between space-x-5">
+          className="large:text-xl flex justify-between space-x-5">
           <div className="flex space-x-5">
             <span>
               <Image
@@ -122,7 +122,7 @@ const MenuItems = () => {
         </Link>
       </li>
       <li>
-        <Link href="/calendar" className="large:text-2xl flex space-x-5">
+        <Link href="/calendar" className="large:text-xl flex space-x-5">
           <span>
             <Image
               src="/images/sidebarIcon/calendar-silhouette1.svg"
@@ -137,7 +137,7 @@ const MenuItems = () => {
       <li>
         <Link
           href="/courses"
-          className="large:text-2xl flex justify-between space-x-5">
+          className="large:text-xl flex justify-between space-x-5">
           <div className="flex space-x-5">
             <span>
               <Image
@@ -168,7 +168,7 @@ const MenuItems = () => {
         </Link>
       </li>
       <li>
-        <Link href="/shop" className="large:text-2xl flex space-x-5">
+        <Link href="/shop" className="large:text-xl flex space-x-5">
           <span>
             <Image
               src="/images/sidebarIcon/online-shopping 1.svg"
@@ -183,7 +183,7 @@ const MenuItems = () => {
       <li>
         <Link
           href="/invoices"
-          className="large:text-2xl flex justify-between space-x-5">
+          className="large:text-xl flex justify-between space-x-5">
           <div className="flex space-x-5">
             <span>
               <Image
@@ -214,7 +214,7 @@ const MenuItems = () => {
         </Link>
       </li>
       <li>
-        <Link href="/settings" className="large:text-2xl flex space-x-5">
+        <Link href="/settings" className="large:text-xl flex space-x-5">
           <span>
             <Image
               src="/images/sidebarIcon/setting 1.svg"

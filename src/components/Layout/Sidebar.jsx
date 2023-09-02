@@ -27,7 +27,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
         </button>
       </div>
       <div>
-        <h3 className="pb-5 pt-2">MAIN MENU</h3>
+        <h3 className="pb-5 pt-2 large:text-lg large:font-bold">MAIN MENU</h3>
       </div>
       {/* Menu Items  */}
       <MenuItems />
@@ -35,7 +35,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
       {/* Footer  */}
       <div className="pt-12">
         <Image
-          src="/images/sidebarIcon/kanban.png"
+          src="/images/sidebarIcon/kanban2.png"
           width={220}
           height={203}
           alt="icon"
