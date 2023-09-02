@@ -35,7 +35,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
 
           {/* Notification Icons Here  */}
           <div className="flex items-center justify-between space-x-6">
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <Image
                 src="/images/header/bell 1.svg"
                 width={28}
@@ -46,7 +46,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
                 12
               </span>
             </div>
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <Image
                 src="/images/header/Video Lesson 2 2.svg"
                 width={28}
@@ -57,7 +57,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
                 5
               </span>
             </div>
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <Image
                 src="/images/header/checkbox (1) 1.svg"
                 width={28}
@@ -68,7 +68,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
                 2
               </span>
             </div>
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <Image
                 src="/images/header/office 1.svg"
                 width={28}
