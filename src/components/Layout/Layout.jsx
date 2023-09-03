@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
       <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <div className={`flex flex-1 flex-col overflow-hidden overflow-y-auto`}>
         <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-        <main className="flex-1  p-4">{children}</main>
+        <main className="flex-1  bg-[#0D0B21] p-5">{children}</main>
       </div>
     </section>
   );

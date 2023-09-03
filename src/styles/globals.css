@@ -2,5 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.taskCard {
+  border-radius: 14px;
+  background: #211a75;
+  padding: 28px 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
 
-
+.d_Flex{
+  @apply flex items-center justify-between 
+}

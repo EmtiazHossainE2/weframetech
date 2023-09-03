@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai';
 
 const Header = ({ toggleSidebar, isSidebarOpen }) => {
   return (
-    <header className="bg-[#15132B] p-4 text-white">
+    <header className="bg-[#15132B] px-4 py-2 text-white">
       <div className="flex">
         <button
           onClick={toggleSidebar}
