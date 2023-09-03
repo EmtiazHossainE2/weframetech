@@ -44,7 +44,7 @@ const MobileMenu = ({ open, setToggle }) => {
                   <input
                     type="search"
                     placeholder="Search"
-                    className="focus:ring-sky-500bg-[#7879F1] w-[300px] rounded-[46px] bg-[#211A75] px-3 py-2 pl-10 text-white focus:border-[#211A75] focus:outline-none focus:ring-1 big:w-[400px]"
+                    className="focus:ring-sky-500bg-[#7879F1] customInput rounded-[46px] bg-[#211A75] px-3 py-2 pl-10 text-white focus:border-[#211A75] focus:outline-none focus:ring-1 big:w-[400px]"
                   />
                 </div>
                 {/* Notification Icons Here  */}
