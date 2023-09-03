@@ -2,14 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Style the horizontal scrollbar */
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #805ad5;
+  border-radius: 5px;
+}
+
+/* Style the vertical scrollbar */
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar-vertical {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #c4c4c4;
+  border-radius: 1px;
+}
+
+@media (max-width: 976px) {
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-vertical {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #805ad5;
+    border-radius: 3px;
+  }
+}
+
+/* Global Custom Style  */
+.d_Flex {
+  @apply flex items-center justify-between;
+}
+
+/* Task card Css */
 .taskCard {
   border-radius: 14px;
   background: #211a75;
   padding: 28px 16px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
   cursor: pointer;
-}
-
-.d_Flex{
-  @apply flex items-center justify-between 
 }

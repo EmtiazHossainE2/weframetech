@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const MenuItems = () => {
   return (
-    <ul className="big:space-y-6 flex flex-col  space-y-3">
+    <ul className="space-y-5 md:space-y-3 big:space-y-6 flex flex-col ">
       <li>
         <Link href="/" className="large:text-xl flex space-x-5">
           <span>
@@ -32,7 +32,7 @@ const MenuItems = () => {
             </span>
             <span className="text-[#464366]">Email</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex laptop:hidden xl:flex items-center space-x-2">
             <span className="rounded-full bg-[#5ECFFF] px-1.5 py-[2px]">
               17
             </span>
@@ -117,7 +117,7 @@ const MenuItems = () => {
             <span className="text-[#7879F1]">Contact</span>
           </div>
           <div>
-            <span className="rounded-full bg-[#E328AF] px-4 py-1">New</span>
+            <span className="rounded-full bg-[#E328AF]  block laptop:hidden xl:block px-4 py-1">New</span>
           </div>
         </Link>
       </li>

@@ -6,17 +6,16 @@ import MenuItems from '../Common/MenuItems';
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <aside
-      className={`large:w-[15%] w-[18%] bg-[#15132B] px-4 text-white ${
-        isSidebarOpen ? '' : 'hidden'
-        }`}>
-      
+      className={` w-[18%] bg-[#15132B] px-4 text-white large:w-[15%] ${
+        isSidebarOpen ? 'hidden laptop:block' : 'hidden'
+      }`}>
       {/* Top  */}
       <div
-        className={`flex w-[18%] items-center space-x-12 p-4 ${
+        className={`flex w-[18%] items-center space-x-12 p-2 xl:p-4 ${
           isSidebarOpen ? ' ' : 'hidden'
         }`}>
         <div className={` ${isSidebarOpen ? '' : ' hidden'}`}>
-          <Link href="/" className="text-lg font-semibold">
+          <Link href="/" className="text-sm font-semibold xl:text-lg">
             Weframetech
           </Link>
         </div>
@@ -27,7 +26,9 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
         </button>
       </div>
       <div>
-        <h3 className="pb-5 pt-2 large:text-lg large:font-bold">MAIN MENU</h3>
+        <h3 className="pb-5 pt-2 text-xs  large:text-lg large:font-bold">
+          MAIN MENU
+        </h3>
       </div>
       {/* Menu Items  */}
       <MenuItems />

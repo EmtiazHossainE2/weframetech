@@ -7,9 +7,9 @@ import Completed from '../AllTask/Completed';
 
 const TaskManagement = () => {
   return (
-    <div className="overflow-x-auto px-1 py-8 text-white">
+    <div className="overflow-x-auto px-1 py-8 text-white ">
       <div className="flex space-x-5">
-        <div className="flex w-[280px] flex-col space-y-3 ">
+        <div className="flex w-[300px] flex-col space-y-3 ">
           <div className="d_Flex px-8">
             <h4 className="font-semibold">To-Do List (24)</h4>
             <button>
@@ -23,7 +23,7 @@ const TaskManagement = () => {
           </div>
           <TodoList />
         </div>
-        <div className="flex w-[280px] flex-col space-y-5 ">
+        <div className="flex w-[300px] flex-col space-y-5 ">
           <div className="d_Flex  px-8">
             <h4 className="font-semibold">In Progress (2)</h4>
             <button>
@@ -37,7 +37,7 @@ const TaskManagement = () => {
           </div>
           <Progress />
         </div>
-        <div className="flex w-[280px] flex-col space-y-5 ">
+        <div className="flex w-[300px] flex-col space-y-5 ">
           <div className="d_Flex  px-8">
             <h4 className="font-semibold">Done (3)</h4>
             <button>
@@ -51,7 +51,7 @@ const TaskManagement = () => {
           </div>
           <Done />
         </div>
-        <div className="flex w-[280px] flex-col space-y-5 ">
+        <div className="flex w-[300px] flex-col space-y-5 ">
           <div className="d_Flex  px-8">
             <h4 className="font-semibold">Revised (0)</h4>
             <button>
@@ -65,7 +65,7 @@ const TaskManagement = () => {
           </div>
           <Revised />
         </div>
-        <div className="flex w-[280px] flex-col space-y-5 ">
+        <div className="flex w-[300px] flex-col space-y-5 ">
           <div className="d_Flex  px-8">
             <h4 className="font-semibold">Completed (2)</h4>
             <button>

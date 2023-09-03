@@ -15,6 +15,8 @@ module.exports = {
       screens: {
         big: '1600px',
         large: '1920px',
+        laptop:"976px",
+        table:"768px"
       },
     },
   },

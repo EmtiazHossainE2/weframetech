@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const SummaryCard = () => {
   return (
-    <div className="flex space-x-2 rounded-[14px] bg-[#15132b] py-12 pl-3 text-white shadow-[0_4px_4px_0px_rgba(0,0,0,0.04)] ">
-      <div className="hidden cursor-pointer md:block">
+    <div className="flex flex-col space-x-2 rounded-[14px] bg-[#15132b] py-12 pl-3 text-white shadow-[0_4px_4px_0px_rgba(0,0,0,0.04)] lg:flex-row ">
+      <div className="hidden cursor-pointer lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="38"
@@ -18,15 +18,25 @@ const SummaryCard = () => {
           />
         </svg>
       </div>
-      <div className="flex basis-11/12 flex-col space-y-5 ">
-        <div className="flex  flex-col items-center justify-between rounded-[14px] lg:flex-row">
-          <div>
-            <h3 className="text-2xl font-bold">School November Tasks</h3>
-            <p className="text-sm text-[#A5A5A5]">
-              Created by Instructor Day on November 31, 2022
-            </p>
+      <div className="flex flex-col space-y-5 lg:basis-11/12 ">
+        <div className="flex  flex-col justify-between rounded-[14px] lg:flex-row lg:items-center">
+          <div className="flex justify-between items-center space-x-2 pr-5">
+            <div>
+              <h3 className="text-lg lg:text-2xl font-bold">School November Tasks</h3>
+              <p className="text-sm text-[#A5A5A5]">
+                Created by Instructor Day on November 31, 2022
+              </p>
+            </div>
+            <div className="cursor-pointer lg:hidden">
+              <Image
+                src="/images/svg/vertIcon.svg"
+                width={24}
+                height={24}
+                alt="icon"
+              />
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-between space-x-3 lg:flex-row">
+          <div className="hidden flex-col items-center justify-between space-x-3 lg:flex lg:flex-row">
             <div className="text-right">
               <p>Centered Martial Arts</p>
               <p className="text-sm text-[#A5A5A5]">Sunnyvale, Ca</p>
@@ -49,73 +59,77 @@ const SummaryCard = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+        <div className="flex flex-col justify-between space-y-3 xl:flex-row xl:items-center">
+          <div className="flex flex-col md:space-x-3 space-y-3 md:space-y-0 md:flex-row lg:items-center">
             {/* avatar group  */}
-            <div className="relative flex items-center">
-              <Image
-                src="/images/svg/placeholder.svg"
-                width={40}
-                height={40}
-                alt="icon"
-                className=""
-              />
-              <Image
-                src="/images/svg/placeholder.svg"
-                width={40}
-                height={40}
-                alt="icon"
-                className="-ml-3"
-              />
-              <Image
-                src="/images/svg/placeholder.svg"
-                width={40}
-                height={40}
-                alt="icon"
-                className="-ml-3"
-              />
-              <Image
-                src="/images/svg/placeholder.svg"
-                width={40}
-                height={40}
-                alt="icon"
-                className="-ml-3"
-              />
-              <span className="-ml-3 rounded-full bg-[#E328AF] px-2 py-1 font-bold">
-                5+
-              </span>
+            <div className="flex items-center space-x-3 ">
+              <div className="relative flex items-center">
+                <Image
+                  src="/images/svg/placeholder.svg"
+                  width={40}
+                  height={40}
+                  alt="icon"
+                  className=""
+                />
+                <Image
+                  src="/images/svg/placeholder.svg"
+                  width={40}
+                  height={40}
+                  alt="icon"
+                  className="-ml-3"
+                />
+                <Image
+                  src="/images/svg/placeholder.svg"
+                  width={40}
+                  height={40}
+                  alt="icon"
+                  className="-ml-3"
+                />
+                <Image
+                  src="/images/svg/placeholder.svg"
+                  width={40}
+                  height={40}
+                  alt="icon"
+                  className="-ml-3"
+                />
+                <span className="-ml-3 rounded-full bg-[#E328AF] px-2 py-1 font-bold">
+                  5+
+                </span>
+              </div>
+              <button className="flex items-center space-x-2 rounded-[14px] bg-[#6418C3] px-3 py-2">
+                <Image
+                  src="/images/svg/add-friend 1.svg"
+                  width={24}
+                  height={24}
+                  alt="icon"
+                />
+                <p>Invite People</p>
+              </button>
             </div>
-            <button className="flex items-center space-x-2 rounded-[14px] bg-[#6418C3] px-3 py-2">
-              <Image
-                src="/images/svg/add-friend 1.svg"
-                width={24}
-                height={24}
-                alt="icon"
-              />
-              <p>Invite People</p>
-            </button>
-            <button className="rounded-[14px] border border-[#7879F1] px-3 py-2 font-bold text-white">
-              Private
-            </button>
-            <button className="rounded-[14px] bg-[#7879F1] px-3 py-2 font-bold text-white">
-              Edit
-            </button>
+            <div className="flex items-center space-x-3">
+              <button className="rounded-[14px] border border-[#7879F1] px-3 py-2 text-sm lg:text-base font-bold text-white">
+                Private
+              </button>
+              <button className="rounded-[14px] bg-[#7879F1] px-3 py-2 text-sm lg:text-base font-bold text-white">
+                Edit
+              </button>
 
-            <button className="flex items-center space-x-2 rounded-[14px] border border-[#6418C3] px-3 py-2">
-              <Image
-                src="/images/svg/chat (1) 1.svg"
-                width={24}
-                height={24}
-                alt="icon"
-              />
-              <p>45 Comments</p>
-            </button>
+              <button className="flex items-center space-x-2 rounded-[14px] border border-[#6418C3] px-3 py-2">
+                <Image
+                  src="/images/svg/chat (1) 1.svg"
+                  width={24}
+                  height={24}
+                  alt="icon"
+                />
+                <p className='text-sm lg:text-base'>45 Comments</p>
+              </button>
+            </div>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 space-x-2">
             <p>Total Progress 60%</p>
-            <div className="w-[250px]">
+            <div className="w-[60%] lg:w-[250px]">
               <div className="h-2 w-full rounded-lg bg-gray-200">
-                <div className="h-full w-[60%] rounded-lg bg-blue-500"></div>
+                <div className="h-full w-[60%] rounded-lg bg-[#805AD5]"></div>
               </div>
             </div>
           </div>
