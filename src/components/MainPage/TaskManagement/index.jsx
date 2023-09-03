@@ -7,10 +7,10 @@ import Completed from '../AllTask/Completed';
 
 const TaskManagement = () => {
   return (
-    <div className="overflow-x-auto px-1 py-8 text-white ">
+    <div className="overflow-x-auto px-1 py-5 text-white ">
       <div className="flex space-x-5">
         <div className="flex w-[300px] flex-col space-y-3 ">
-          <div className="d_Flex px-8">
+          <div className="d_Flex px-3 lg:px-8">
             <h4 className="font-semibold">To-Do List (24)</h4>
             <button>
               <Image

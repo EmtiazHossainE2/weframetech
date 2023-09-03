@@ -82,11 +82,11 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
               <div className='lg:hidden'>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="46"
-                  height="46"
+                  width="40"
+                  height="40"
                   viewBox="0 0 57 57"
                   fill="none">
-                  <rect width="46" height="46" rx="14" fill="#C4C4C4" />
+                  <rect width="40" height="40" rx="14" fill="#C4C4C4" />
                 </svg>
               </div>
               <div className="flex flex-col pb-2 lg:pb-0">

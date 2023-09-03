@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const SummaryCard = () => {
   return (
-    <div className="flex flex-col space-x-2 rounded-[14px] bg-[#15132b] py-12 pl-3 text-white shadow-[0_4px_4px_0px_rgba(0,0,0,0.04)] lg:flex-row ">
+    <div className="flex flex-col space-x-2 rounded-[14px] bg-[#15132b] py-6 pl-1 md:pl-3 text-white shadow-[0_4px_4px_0px_rgba(0,0,0,0.04)] lg:flex-row ">
       <div className="hidden cursor-pointer lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,14 +96,14 @@ const SummaryCard = () => {
                   5+
                 </span>
               </div>
-              <button className="flex items-center space-x-2 rounded-[14px] bg-[#6418C3] px-3 py-2">
+              <button className="flex items-center space-x-2 rounded-[14px] bg-[#6418C3] px-2 md:px-3 py-2">
                 <Image
                   src="/images/svg/add-friend 1.svg"
                   width={24}
                   height={24}
                   alt="icon"
                 />
-                <p>Invite People</p>
+                <p className='text-xs sm:text-base'>Invite People</p>
               </button>
             </div>
             <div className="flex items-center space-x-3">
@@ -121,7 +121,7 @@ const SummaryCard = () => {
                   height={24}
                   alt="icon"
                 />
-                <p className='text-sm lg:text-base'>45 Comments</p>
+                <p className='text-xs lg:text-base'>45 Comments</p>
               </button>
             </div>
           </div>
